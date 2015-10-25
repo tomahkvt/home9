@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3307/zooshop2</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">usbw</property>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="show_sql">true</property>
+		<property name="hbm2ddl.auto">validate</property>
+
+		<mapping class="org.oa.zooshop.model.Accessory" />
+<mapping class="org.oa.zooshop.model.AccessoryType" />
+<mapping class="org.oa.zooshop.model.Animal" />
+<mapping class="org.oa.zooshop.model.AnimalType" />
+<mapping class="org.oa.zooshop.model.Bird" />
+<mapping class="org.oa.zooshop.model.BirdSpecies" />
+<mapping class="org.oa.zooshop.model.BirdType" />
+<mapping class="org.oa.zooshop.model.Cashbox" />
+<mapping class="org.oa.zooshop.model.Client" />
+<mapping class="org.oa.zooshop.model.Delivery" />
+<mapping class="org.oa.zooshop.model.DeliveryType" />
+<mapping class="org.oa.zooshop.model.Employee" />
+<mapping class="org.oa.zooshop.model.Fish" />
+<mapping class="org.oa.zooshop.model.FishSpecies" />
+<mapping class="org.oa.zooshop.model.FishType" />
+<mapping class="org.oa.zooshop.model.Food" />
+<mapping class="org.oa.zooshop.model.FoodType" />
+<mapping class="org.oa.zooshop.model.GoodsType" />
+<mapping class="org.oa.zooshop.model.Guarantee" />
+<mapping class="org.oa.zooshop.model.Mammal" />
+<mapping class="org.oa.zooshop.model.MammalSpecies" />
+<mapping class="org.oa.zooshop.model.MammalType" />
+<mapping class="org.oa.zooshop.model.Payment" />
+<mapping class="org.oa.zooshop.model.Position" />
+<mapping class="org.oa.zooshop.model.Product" />
+<mapping class="org.oa.zooshop.model.ProductType" />
+<mapping class="org.oa.zooshop.model.Provider" />
+<mapping class="org.oa.zooshop.model.ReceiptGoods" /> 
+
+<mapping class="org.oa.zooshop.model.Returned" />
+<mapping class="org.oa.zooshop.model.Salling" />
+<mapping class="org.oa.zooshop.model.Supplier" />
+	</session-factory>
+</hibernate-configuration>
